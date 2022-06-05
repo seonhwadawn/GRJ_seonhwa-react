@@ -26,7 +26,14 @@ function MyModal({ handleAddList, isModalOpen, handleModalOpen }) {
           <div className="modal__overlay"></div>
           <div className="modal__form">
             <form className="modal" onSubmit={handleSubmit}>
-              <button className="modal__close">X</button>
+              <button
+                className="modal__close"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
+              >
+                X
+              </button>
               <label htmlFor="name">이름</label>
               <input
                 type="text"
