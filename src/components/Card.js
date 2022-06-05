@@ -4,7 +4,7 @@ function Card({ data }) {
   return (
     <>
       {data.map((plant) => (
-        <div className="card" key={plant.id}>
+        <div className="card" key={plant.name}>
           <img src={plant.image} alt={plant.name} />
           <span>{plant.content}</span>
         </div>
