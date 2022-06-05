@@ -9,6 +9,7 @@ function MyModal({ handleAddList, isModalOpen, handleModalOpen }) {
   // 여기서 submit하면 handleModalOpen을 false로 바꿈, 이걸 받아오는 sidebar에서 value어쩌구...
   const handleSubmit = (e) => {
     e.preventDefault();
+    // 이거 handleAddList통해서 보내줄거임
     handleAddList({ name, image, content });
     handleModalOpen(false);
 
